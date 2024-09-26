@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Wedding Invitation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ส่วนแรก -->
+    <div class="container">
+        <h1>You're Invited!</h1>
+        <p>We are pleased to invite you to the wedding of</p>
+        <h1>M & Air</h1>
+
+        <!-- Countdown Timer -->
+        <div id="countdown"></div>
+
+        <div class="timer-box">
+            <div class="timer" id="days">0D</div>
+            <div class="timer" id="hours">0H</div>
+            <div class="timer" id="minutes">0M</div>
+            <div class="timer" id="seconds">0S</div>
+        </div>
+
+        <p>on January 12, 2025</p>
+
+        <div class="image-container">
+            <img src="bg/image13.jpg" alt="Wedding Image" loading="lazy" width="600" height="400">
+        </div>
+
+        <div class="footer">
+            <p>Join us to celebrate!</p>
+        </div>
+    </div>
+
+    <!-- ส่วนที่สอง -->
+    <div class="section2">
+        <div class="container">
+            <h2>Welcome</h2>
+    
+            <!-- Flip Effect Section -->
+            <div class="flip-container" id="flip-container">
+                <div class="flipper">
+                    <div class="front">
+                        <img src="pic/2.png" alt="Wedding Photo Front" class="rounded-image" width="100%" height="90%">
+                    </div>
+                    <div class="back">
+                        <img src="pic/5.png" alt="Wedding Photo Back" class="rounded-image" width="100%" height="90%">
+                    </div>
+                </div>
+            </div>
+            <img src="pic/2.png" alt="Second Section Image" style="opacity: 0.2;" width="100%" height="auto">
+            <p>#LoveIsInTheAirAndM</p>
+        </div>
+    </div>
+    
+    <!-- ส่วนที่สาม -->
+    <div class="section3">
+        <h2>Enjoy the Video</h2>
+        <div style="width: auto; height: 50px;"></div>
+        <div class="player-container">       
+            <video id="video" data-src="vdo/vdo1.mp4" preload="none"></video>
+            <p>This is a special video for our.</p>        
+            <div class="controls">
+                <button class="play-button" id="playPauseBtn">►</button>
+                <div class="progress-bar" id="progressBar">
+                    <div id="progress"></div>
+                </div>        
+                <input type="range" id="volumeSlider" class="volume-slider" min="0" max="1" step="0.01" value="1">
+            </div>
+        </div>
+        <div style="width: auto; height: 100px;"></div>
+        <p>Thank you for being part of our special day!</p>
+    </div>
+
+    <!-- ส่วนที่สี่ -->
+    <div class="section4">
+        <div class="container">
+            <h2>Memorable Moments</h2>
+            <div style="width: auto; height: 50px;"></div>
+            <div class="slideshow-container" id="slideshow">
+                <div class="slides">
+                    <img src="pic/image1.jpg" alt="Image 1">
+                </div>
+                <div class="slides">
+                    <img src="pic/image2.jpg" alt="Image 2">
+                </div>
+                <div class="slides">
+                    <img src="pic/image3.jpg" alt="Image 3">
+                </div>
+            
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>     
+
+            <div class="dots" id="dots-container"></div>
+            <div style="width: auto; height: 100px;"></div>
+
+        </div>
+    </div>
+
+    <!-- ส่วนที่ห้า -->
+    <div class="section5">
+        <img src="bg/image12.jpg" alt="Wedding Image" loading="lazy" width="600" height="400">
+        <h2>MAP</h2>        
+        <div id="map">
+            <iframe src="https://maps.google.com/maps?q=15.256421306518199,104.84879125203172&t=&z=15&ie=UTF8&iwloc=&output=embed" width="100%" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <p>The Grand Hall, City Center</p>
+
+        <!-- Social Share Section -->
+        <div class="social-share">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://example.com" target="_blank">
+                <img src="bg/facebook-icon.png" alt="Facebook" width="50" height="50">
+            </a>
+            <a href="https://www.instagram.com/?url=https://example.com" target="_blank">
+                <img src="bg/instagram-icon.png" alt="Instagram" width="50" height="50">
+            </a>
+            <a href="https://line.me/R/msg/text/?https://example.com" target="_blank">
+                <img src="bg/line-icon.png" alt="LINE" width="50" height="50">
+            </a>
+        </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
