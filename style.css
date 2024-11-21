@@ -11,7 +11,7 @@
 body {
     font-family: var(--font-family);
     margin: 0;
-    padding: 20px;
+    padding: 10px;
     background-color: var(--main-bg-color);
     text-align: center;
     color: var(--main-text-color);
@@ -22,8 +22,8 @@ body {
 /* Container Styles */
 .container, .section2, .section3, .section4, .section5 {
     max-width: 1200px;
-    margin: 2% auto;
-    padding: 2rem;
+    margin: 1% auto;
+    padding: 1rem;
     background-image: url('bg/BG2.jpeg');
     background-size: cover;
     background-position: center;
@@ -35,7 +35,7 @@ body {
 h1, h2 {
     font-size: clamp(1.5rem, 2vw, 2.5rem);
     color: var(--main-text-color);
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem;
 }
 
 p {
@@ -230,8 +230,8 @@ video {
 /* Slideshow Styles */
 .slideshow-container {
     position: relative;
-    max-width: 800px;
-    width: 100%;
+    max-width: 2024px;
+    width: auto;
     overflow: hidden;
     margin: auto;
 }
@@ -239,14 +239,14 @@ video {
 .slides {
     display: none;
     width: 100%;
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
 }
 
 img {
     width: 100%;
     height: auto;   
     object-fit: cover;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 18 / 9;
 }
 
 .prev, .next {
@@ -297,6 +297,14 @@ img {
     transform: scale(1.05);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
+
+/* ปรับมุมimage12*/
+  .rounded-corners {
+    width: auto;
+    height: auto;
+    border-radius: 15px; /* ปรับค่าตามต้องการ */
+    overflow: hidden; /* เพื่อซ่อนส่วนที่เกินออกมา */
+}
   
 /* Map Section */
 #map iframe {
